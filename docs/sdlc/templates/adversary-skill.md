@@ -61,6 +61,12 @@ should be findable from the PR forever, not live only in chat scrollback.
 - Findings the attacker raises are fixed or answered — never silently
   dropped. "Fixed in <commit>" or a stated reason, per finding.
 - If the attacker finds nothing, say so plainly; do not invent findings.
-- The producing session never marks its own change "reviewed". This skill
-  prepares review; the human (or their explicit delegation) approves.
+- The producing session never marks its own change "reviewed", and never
+  approves it. This skill prepares review; **a human approves.** Approval is
+  not delegable to an agent — including to this one, and including to the CI
+  the producing session wrote.
+- Where a project deliberately auto-ships some class of change without this
+  memo (a velocity trade), that carve-out is named in its CLAUDE.md with an
+  explicit boundary — user-facing behavior, money, schema, and anything
+  leaving the desk stay on this path.
 ```
