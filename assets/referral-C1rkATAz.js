@@ -1,0 +1,1 @@
+var e=`ba_referral_source_v1`;function t(t,n=Date.now()){try{let r=new URLSearchParams(t).get(`from`);r&&!localStorage.getItem(`ba_referral_source_v1`)&&localStorage.setItem(e,JSON.stringify({from:r,at:n}))}catch{}}export{t};
